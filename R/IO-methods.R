@@ -47,10 +47,10 @@
 #' @export
 #' @examples
 #' # # # import with default parameters, specify a file
-#' biom_file <- system.file("extdata", "rich_sparse_otu_table.biom", package = "biomformat")
+#' biom_file <- system.file("extdata", "rich_sparse_otu_table.biom", package = "biomformatshaman")
 #' biom_file
 #' read_biom(biom_file)
-#' biom_file <- system.file("extdata", "min_sparse_otu_table.biom", package = "biomformat")
+#' biom_file <- system.file("extdata", "min_sparse_otu_table.biom", package = "biomformatshaman")
 #' biom_file
 #' read_biom(biom_file)
 #' ## The previous examples use system.file() because of constraints in specifying a fixed
@@ -114,7 +114,7 @@ read_biom <- function(biom_file){
 #' @export
 #' @importFrom rjson toJSON
 #' @examples
-#' biom_file <- system.file("extdata", "rich_sparse_otu_table.biom", package = "biomformat")
+#' biom_file <- system.file("extdata", "rich_sparse_otu_table.biom", package = "biomformatshaman")
 #' x = read_biom(biom_file)
 #' outfile = tempfile()
 #' write_biom(x, outfile)
@@ -152,7 +152,7 @@ write_biom <- function(x, biom_file){
 #' @export
 #' @importFrom rhdf5 h5read
 #' @examples
-#' biom_file <- system.file("extdata", "rich_sparse_otu_table_hdf5.biom", package = "biomformat")
+#' biom_file <- system.file("extdata", "rich_sparse_otu_table_hdf5.biom", package = "biomformatshaman")
 #' x = read_hdf5_biom(biom_file)
 #' x = biom(x)
 #' outfile = tempfile()
